@@ -1,0 +1,16 @@
+<div class="card meteo-card mb-3" *ngIf="meteo">
+  <div class="card-header card-header-gradient">
+    <h2>Météo à {{ meteo.name }}</h2>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Température : {{ meteo.main.temp | number:'1.0-1' }}°C</p>
+    <p class="card-text">Ressenti : {{ meteo.main.feels_like | number:'1.0-1' }}°C</p>
+    <p class="card-text">Conditions : {{ meteo.weather[0].description }}</p>
+    <p class="card-text">Humidité : {{ meteo.main.humidity }}%</p>
+    <p class="card-text">Vent : {{ convertirDirectionVent(meteo.wind.deg) }} à {{ meteo.wind.speed | number:'1.0-1' }} m/s</p>
+  </div>
+  <div class="card-footer">
+    <button type="button" class="btn btn-gradient-more">En savoir plus</button>
+  </div>
+</div>
+

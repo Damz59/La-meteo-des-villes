@@ -1,0 +1,17 @@
+<!-- Card pour afficher les informations sur la ville -->
+<div class="card ville-card mb-3" *ngIf="ville" > <!-- Vérifie si 'ville' existe -->
+  <div class="card-header card-header-gradient">
+    <h2>Information sur {{ville.name}}</h2> 
+  </div>
+  <div class="card-body">
+    <p class="card-text">Population : {{ ville.population || 'Non disponible' }} habitants.</p>
+    <p class="card-text">Département : {{ ville.context || 'Non disponible' }}</p>
+    <p class="card-text">Code postal : {{ ville.postcode || 'Non disponible' }}</p>
+    <p class="card-text">Latitude : {{ ville.x || 'Non disponible' }}</p>
+  <p class="card-text">Longitude : {{ ville.y || 'Non disponible' }}</p>
+  <p class="card-text">Code INSEE : {{ ville.citycode || 'Non disponible' }}</p>
+  </div>
+  <div class="card-footer">
+    <button type="button" class="btn btn-gradient-more">En savoir plus</button>
+  </div>
+</div>

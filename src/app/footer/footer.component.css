@@ -1,0 +1,40 @@
+footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Fond sombre */
+  color: white; /* Couleur du texte en blanc */
+  padding: 20px; /* Espacement intérieur */
+  text-align: center; /* Centre le texte */
+}
+
+.footer-content {
+  max-width: 1200px; /* Largeur maximale */
+  margin: auto; /* Centre le contenu */
+}
+
+.footer-content nav ul {
+  list-style-type: none; /* Supprime les puces de la liste */
+  padding: 0; /* Supprime le padding par défaut */
+  margin: 10px 0; /* Marge autour de la liste */
+}
+
+.footer-content nav ul li {
+  display: inline; /* Affiche les éléments en ligne */
+  margin: 0 15px; /* Espace entre les éléments */
+}
+
+.footer-content nav ul li a {
+  color: white; /* Couleur des liens en blanc */
+  text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+.footer-content nav ul li a:hover {
+  text-decoration: underline; /* Souligne au survol */
+}
+
+.footer-icon {
+  font-size: 24px; /* Ajustez la taille selon vos besoins */
+  color: white; /* Couleur blanche */
+}
+
+.footer-icon:hover {
+  color: #ccc; /* Couleur au survol (optionnel) */
+}

@@ -1,0 +1,21 @@
+.card-header-gradient {
+  background: linear-gradient(to right, darkblue, #8f94fb);
+  color: white;
+}
+
+.btn-gradient-more {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  border: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-gradient-more:hover {
+  background: linear-gradient(to right, #3f43a5, #7a7fe7);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-gradient-more:active {
+  background-color: darkblue;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.25), 0 6px 12px rgba(0, 0, 0, 0.4);
+}

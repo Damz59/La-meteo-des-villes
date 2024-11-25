@@ -1,0 +1,10 @@
+<div class="col-lg-6 mt-5">
+  <div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping">
+      <i class="bi bi-buildings"></i>
+    </span>
+    <input [formControl]="champ" type="text" class="form-control" id="champ" placeholder="Saisir une ville"
+      aria-label="ville" aria-describedby="addon-wrapping">
+      <button type="button" (click)="recupererValeur()" class="btn btn-gradient">Valider</button>
+  </div>
+</div>

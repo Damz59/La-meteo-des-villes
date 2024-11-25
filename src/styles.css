@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-image: url("../public/soleil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Assurez-vous que le corps prend toute la hauteur */
+    margin: 0; /* Supprime les marges par défaut */
+  }
+
+  html {
+    height: 100%; /* Assurez-vous que le corps prend toute la hauteur */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+#app-root {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    min-height: 100vh; /* Assure que le conteneur prend au moins la hauteur de la fenêtre */
+}
+
+router-outlet {
+    flex: 1; /* Permet à l'outlet de prendre tout l'espace restant */
+}
